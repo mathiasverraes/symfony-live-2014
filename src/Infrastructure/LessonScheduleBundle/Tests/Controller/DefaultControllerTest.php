@@ -1,6 +1,6 @@
 <?php
 
-namespace Sflive\LessonScheduleBundle\Tests\Controller;
+namespace Infrastructure\LessonScheduleBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

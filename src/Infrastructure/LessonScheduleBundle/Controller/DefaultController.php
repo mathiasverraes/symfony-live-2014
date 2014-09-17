@@ -1,6 +1,6 @@
 <?php
 
-namespace Sflive\LessonScheduleBundle\Controller;
+namespace Infrastructure\LessonScheduleBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;

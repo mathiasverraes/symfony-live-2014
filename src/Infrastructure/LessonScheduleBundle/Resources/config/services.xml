@@ -6,11 +6,11 @@
 
     <!--
     <parameters>
-        <parameter key="sflive_lesson_schedule.example.class">Sflive\LessonScheduleBundle\Example</parameter>
+        <parameter key="lesson_schedule.example.class">Infrastructure\LessonScheduleBundle\Example</parameter>
     </parameters>
 
     <services>
-        <service id="sflive_lesson_schedule.example" class="%sflive_lesson_schedule.example.class%">
+        <service id="lesson_schedule.example" class="%lesson_schedule.example.class%">
             <argument type="service" id="service_id" />
             <argument>plain_value</argument>
             <argument>%parameter_name%</argument>
