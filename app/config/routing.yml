@@ -1,0 +1,5 @@
+sflive_lesson_schedule:
+    resource: "@SfliveLessonScheduleBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
