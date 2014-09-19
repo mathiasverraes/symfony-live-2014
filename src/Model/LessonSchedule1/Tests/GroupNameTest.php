@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Model\LessonSchedule\Tests;
+namespace Model\LessonSchedule1\Tests;
 
 
 use InvalidArgumentException;
-use Model\LessonSchedule\GroupName;
+use Model\LessonSchedule1\GroupName;
 
 final class GroupNameTest extends \PHPUnit_Framework_TestCase
 {
@@ -17,5 +17,6 @@ final class GroupNameTest extends \PHPUnit_Framework_TestCase
         $this->setExpectedException(InvalidArgumentException::class);
         new GroupName('7A');
     }
+
 }
  

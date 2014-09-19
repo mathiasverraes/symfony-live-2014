@@ -1,9 +1,9 @@
 <?php
 
-namespace Model\LessonSchedule\Tests;
+namespace Model\LessonSchedule1\Tests;
 
 use InvalidArgumentException;
-use Model\LessonSchedule\Time;
+use Model\LessonSchedule1\Time;
 
 final class TimeTest extends \PHPUnit_Framework_TestCase
 {

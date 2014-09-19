@@ -1,11 +1,11 @@
 <?php
 
-namespace Model\LessonSchedule\Tests;
+namespace Model\LessonSchedule1\Tests;
 
-use Model\LessonSchedule\Time;
-use Model\LessonSchedule\TimeSlot;
-use Model\LessonSchedule\Weekday;
-use Model\LessonSchedule\WeeklyTimeSlot;
+use Model\LessonSchedule1\Time;
+use Model\LessonSchedule1\TimeSlot;
+use Model\LessonSchedule1\Weekday;
+use Model\LessonSchedule1\WeeklyTimeSlot;
 
 final class WeeklyTimeSlotTest extends \PHPUnit_Framework_TestCase
 {

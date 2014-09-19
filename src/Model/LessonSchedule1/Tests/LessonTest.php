@@ -1,14 +1,14 @@
 <?php
 
-namespace Model\LessonSchedule\Tests;
+namespace Model\LessonSchedule1\Tests;
 
-use Model\LessonSchedule\EmployeeId;
-use Model\LessonSchedule\Lesson;
-use Model\LessonSchedule\Subject;
-use Model\LessonSchedule\Time;
-use Model\LessonSchedule\TimeSlot;
-use Model\LessonSchedule\Weekday;
-use Model\LessonSchedule\WeeklyTimeSlot;
+use Model\LessonSchedule1\TeacherId;
+use Model\LessonSchedule1\Lesson;
+use Model\LessonSchedule1\Subject;
+use Model\LessonSchedule1\Time;
+use Model\LessonSchedule1\TimeSlot;
+use Model\LessonSchedule1\Weekday;
+use Model\LessonSchedule1\WeeklyTimeSlot;
 
 final class LessonTest extends \PHPUnit_Framework_TestCase
 {
@@ -20,7 +20,7 @@ final class LessonTest extends \PHPUnit_Framework_TestCase
         $scheduledLesson = new Lesson(
             new WeeklyTimeSlot(Weekday::Monday(), new TimeSlot(new Time("10:00"), new Time("11:00"))),
             new Subject('Programming'),
-            new EmployeeId("1234")
+            new TeacherId("1234")
         );
 
         $expected = "Monday 10:00-11:00 Programming with 1234";

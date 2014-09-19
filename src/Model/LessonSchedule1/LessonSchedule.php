@@ -1,6 +1,6 @@
 <?php
 
-namespace Model\LessonSchedule;
+namespace Model\LessonSchedule1;
 
 final class LessonSchedule
 {
@@ -20,8 +20,5 @@ final class LessonSchedule
         $this->lessons[] = $lesson;
         return $lessonSchedule;
     }
-
-
-
 
 }

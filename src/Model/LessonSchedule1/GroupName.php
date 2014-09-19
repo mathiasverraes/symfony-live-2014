@@ -1,6 +1,6 @@
 <?php
 
-namespace Model\LessonSchedule;
+namespace Model\LessonSchedule1;
 
 final class GroupName
 {

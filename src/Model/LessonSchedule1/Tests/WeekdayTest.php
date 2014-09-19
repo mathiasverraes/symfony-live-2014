@@ -1,9 +1,9 @@
 <?php
 
-namespace Model\LessonSchedule\Tests;
+namespace Model\LessonSchedule1\Tests;
 
 use InvalidArgumentException;
-use Model\LessonSchedule\Weekday;
+use Model\LessonSchedule1\Weekday;
 use PHPUnit_Framework_TestCase;
 
 final class WeekdayTest extends PHPUnit_Framework_TestCase

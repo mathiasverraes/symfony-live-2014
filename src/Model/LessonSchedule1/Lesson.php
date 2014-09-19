@@ -1,6 +1,6 @@
 <?php
 
-namespace Model\LessonSchedule;
+namespace Model\LessonSchedule1;
 
 final class Lesson
 {
@@ -8,7 +8,7 @@ final class Lesson
     private $teacher;
     private $subject;
 
-    public function __construct(WeeklyTimeSlot $weeklyTimeSlot, Subject $subject, EmployeeId $teacher)
+    public function __construct(WeeklyTimeSlot $weeklyTimeSlot, Subject $subject, TeacherId $teacher)
     {
         $this->weeklyTimeSlot = $weeklyTimeSlot;
         $this->subject = $subject;

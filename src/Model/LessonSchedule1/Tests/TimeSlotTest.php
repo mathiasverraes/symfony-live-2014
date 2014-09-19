@@ -1,10 +1,10 @@
 <?php
 
-namespace Model\LessonSchedule\Tests;
+namespace Model\LessonSchedule1\Tests;
 
 use InvalidArgumentException;
-use Model\LessonSchedule\Time;
-use Model\LessonSchedule\TimeSlot;
+use Model\LessonSchedule1\Time;
+use Model\LessonSchedule1\TimeSlot;
 
 final class TimeSlotTest extends \PHPUnit_Framework_TestCase
 {
