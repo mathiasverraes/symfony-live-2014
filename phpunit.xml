@@ -1,0 +1,19 @@
+<phpunit
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.2/phpunit.xsd"
+        bootstrap="vendor/autoload.php"
+        strict="true"
+        colors="true"
+        verbose="true"
+        >
+    <testsuites>
+        <testsuite name="Sflive">
+            <directory suffix="Test.php">src</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
+</phpunit>
