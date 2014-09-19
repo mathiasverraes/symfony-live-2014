@@ -1,14 +1,14 @@
 <?php
 
-namespace Model\LessonSchedule1\Tests;
+namespace Model\P1_ValueObjects\Tests;
 
-use Model\LessonSchedule1\TeacherId;
-use Model\LessonSchedule1\Lesson;
-use Model\LessonSchedule1\Subject;
-use Model\LessonSchedule1\Time;
-use Model\LessonSchedule1\TimeSlot;
-use Model\LessonSchedule1\Weekday;
-use Model\LessonSchedule1\WeeklyTimeSlot;
+use Model\P1_ValueObjects\TeacherId;
+use Model\P1_ValueObjects\Lesson;
+use Model\P1_ValueObjects\Subject;
+use Model\P1_ValueObjects\Time;
+use Model\P1_ValueObjects\TimeSlot;
+use Model\P1_ValueObjects\Weekday;
+use Model\P1_ValueObjects\WeeklyTimeSlot;
 
 final class LessonTest extends \PHPUnit_Framework_TestCase
 {

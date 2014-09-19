@@ -1,8 +1,8 @@
 <?php
 
-namespace Model\LessonSchedule1;
+namespace Model\P4_LessonScheduleAggregate;
 
-final class Lesson
+final class Lesson // Child Entity
 {
     private $weeklyTimeSlot;
     private $teacher;

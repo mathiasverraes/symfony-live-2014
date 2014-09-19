@@ -1,6 +1,6 @@
 <?php
 
-namespace Model\LessonSchedule2;
+namespace Model\P1_ValueObjects;
 
 final class Subject
 {
@@ -15,10 +15,5 @@ final class Subject
     public function __toString()
     {
         return $this->subject;
-    }
-
-    public function equals(Subject $other)
-    {
-        return $this->subject == $other->subject;
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Model\LessonSchedule1;
+namespace Model\P4_LessonScheduleAggregate;
 
 final class TeacherId
 {
@@ -9,8 +9,6 @@ final class TeacherId
     public function __construct($teacherId)
     {
         \Assert\that($teacherId)->string();
-        // probably some regex validation...
-
         $this->teacherId = $teacherId;
     }
 
@@ -19,5 +17,8 @@ final class TeacherId
         return $this->teacherId;
     }
 
-
+    public function equals(TeacherId $other)
+    {
+        return $this->teacherId == $other->teacherId;
+    }
 } 

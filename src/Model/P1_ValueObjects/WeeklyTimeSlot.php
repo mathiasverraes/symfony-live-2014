@@ -1,6 +1,6 @@
 <?php
 
-namespace Model\LessonSchedule1;
+namespace Model\P1_ValueObjects;
 
 final class WeeklyTimeSlot
 {

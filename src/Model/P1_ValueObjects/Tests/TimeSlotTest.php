@@ -1,10 +1,10 @@
 <?php
 
-namespace Model\LessonSchedule1\Tests;
+namespace Model\P1_ValueObjects\Tests;
 
 use InvalidArgumentException;
-use Model\LessonSchedule1\Time;
-use Model\LessonSchedule1\TimeSlot;
+use Model\P1_ValueObjects\Time;
+use Model\P1_ValueObjects\TimeSlot;
 
 final class TimeSlotTest extends \PHPUnit_Framework_TestCase
 {

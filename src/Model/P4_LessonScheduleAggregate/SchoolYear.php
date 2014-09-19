@@ -1,6 +1,6 @@
 <?php
 
-namespace Model\LessonSchedule1;
+namespace Model\P4_LessonScheduleAggregate;
 
 final class SchoolYear
 {

@@ -2,11 +2,11 @@
 namespace Infrastructure\LessonScheduleBundle\Tests\Repository;
 
 use Infrastructure\LessonScheduleBundle\Repository\InMemoryStaffRepository;
-use Model\LessonSchedule2\Subject;
-use Model\LessonSchedule2\TeacherId;
-use Model\LessonSchedule2\Name;
-use Model\LessonSchedule2\Teacher;
-use Model\LessonSchedule2\StaffRepository;
+use Model\P2_EntitesRepositories\Subject;
+use Model\P2_EntitesRepositories\TeacherId;
+use Model\P2_EntitesRepositories\Name;
+use Model\P2_EntitesRepositories\Teacher;
+use Model\P2_EntitesRepositories\StaffRepository;
 use PHPUnit_Framework_TestCase;
 
 abstract class StaffRepositoryTest extends PHPUnit_Framework_TestCase

@@ -2,10 +2,10 @@
 
 namespace Infrastructure\LessonScheduleBundle\Repository;
 
-use Model\LessonSchedule2\StaffRepository;
-use Model\LessonSchedule2\Subject;
-use Model\LessonSchedule2\Teacher;
-use Model\LessonSchedule2\TeacherId;
+use Model\P2_EntitesRepositories\StaffRepository;
+use Model\P2_EntitesRepositories\Subject;
+use Model\P2_EntitesRepositories\Teacher;
+use Model\P2_EntitesRepositories\TeacherId;
 
 final class InMemoryStaffRepository implements StaffRepository
 {

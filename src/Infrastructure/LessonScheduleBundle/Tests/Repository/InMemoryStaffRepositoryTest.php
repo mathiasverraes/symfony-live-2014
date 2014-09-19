@@ -2,9 +2,9 @@
 namespace Infrastructure\LessonScheduleBundle\Tests\Repository;
 
 use Infrastructure\LessonScheduleBundle\Repository\InMemoryStaffRepository;
-use Model\LessonSchedule2\StaffRepository;
-use Model\LessonSchedule2\Subject;
-use Model\LessonSchedule2\TeacherId;
+use Model\P2_EntitesRepositories\StaffRepository;
+use Model\P2_EntitesRepositories\Subject;
+use Model\P2_EntitesRepositories\TeacherId;
 
 final class InMemoryStaffRepositoryTest extends StaffRepositoryTest
 {

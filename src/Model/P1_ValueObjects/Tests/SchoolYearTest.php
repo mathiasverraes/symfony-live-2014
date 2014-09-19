@@ -1,8 +1,8 @@
 <?php
 
-namespace Model\LessonSchedule1\Tests;
+namespace Model\P1_ValueObjects\Tests;
 
-use Model\LessonSchedule1\SchoolYear;
+use Model\P1_ValueObjects\SchoolYear;
 
 final class SchoolYearTest extends \PHPUnit_Framework_TestCase
 {

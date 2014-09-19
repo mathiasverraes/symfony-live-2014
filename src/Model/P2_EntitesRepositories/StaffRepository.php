@@ -1,6 +1,6 @@
 <?php
 
-namespace Model\LessonSchedule2;
+namespace Model\P2_EntitesRepositories;
 
 interface StaffRepository
 {
