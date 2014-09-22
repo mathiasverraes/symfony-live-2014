@@ -4,17 +4,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <!--
-    <parameters>
-        <parameter key="lesson_schedule.example.class">Infrastructure\LessonScheduleBundle\Example</parameter>
-    </parameters>
-
     <services>
-        <service id="lesson_schedule.example" class="%lesson_schedule.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        <service id="lesson_schedule.lesson_schedule.controller" class="Infrastructure\LessonScheduleBundle\Controller\LessonScheduleController">
+            <argument type="service" id="form.factory" />
+            <argument type="service" id="templating" />
         </service>
     </services>
-    -->
+
 </container>
