@@ -1,0 +1,23 @@
+Model\P2_EntitesRepositories\Teacher:
+  type: entity
+  table: Teacher
+  id:
+    teacherId:
+      type: string
+      length: 255
+  fields:
+    name:
+      type: string
+      length: 255
+  manyToMany:
+    subjects:
+      targetEntity: Model\P2_EntitesRepositories\Subject
+      cascade: [all]
+      joinTable:
+        name: teachers_subjects
+        joinColumns:
+          teacher_id:
+            referencedColumnName: teacherId
+        inverseJoinColumns:
+          subject_id:
+            referencedColumnName: id

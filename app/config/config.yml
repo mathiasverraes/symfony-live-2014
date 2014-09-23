@@ -54,11 +54,21 @@ doctrine:
         charset:  UTF8
         # if using pdo_sqlite as your database driver, add the path in parameters.yml
         # e.g. database_path: "%kernel.root_dir%/data/data.db3"
-        # path:     "%database_path%"
+        path:     "%database_path%"
 
     orm:
+        default_entity_manager: default
         auto_generate_proxy_classes: "%kernel.debug%"
-        auto_mapping: true
+        entity_managers:
+            default:
+              auto_mapping: false
+              mappings:
+                icon:
+                  mapping:    true
+                  type:       yml
+                  dir:        "%kernel.root_dir%/../src/Infrastructure/LessonScheduleBundle/Resources/config/Mappings/Teacher"
+                  prefix:     Model\P2_EntitesRepositories
+                  is_bundle:  false
 
 # Swiftmailer Configuration
 swiftmailer:

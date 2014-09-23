@@ -16,7 +16,6 @@ class WeeklySlotType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-
         $days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
         $builder
             ->add('day', 'choice', ['mapped' => false, 'choices' => array_combine($days, $days)])

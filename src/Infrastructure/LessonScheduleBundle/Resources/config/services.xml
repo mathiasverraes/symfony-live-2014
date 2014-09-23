@@ -5,6 +5,10 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
+        <service id="lesson_schedule.repository.staff" class="Infrastructure\LessonScheduleBundle\Repository\DoctrineStaffRepository">
+            <argument type="service" id="doctrine" />
+        </service>
+
         <service id="lesson_schedule.lesson_schedule.controller" class="Infrastructure\LessonScheduleBundle\Controller\LessonScheduleController">
             <argument type="service" id="form.factory" />
             <argument type="service" id="templating" />
