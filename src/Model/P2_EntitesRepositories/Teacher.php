@@ -8,14 +8,14 @@ final class Teacher
 {
     private $teacherId;
     private $name;
-    private $subjects = [];
+    private $subjectAssignments;
 
     public function __construct(TeacherId $teacherId, Name $name)
     {
         $this->teacherId = $teacherId;
         $this->name = $name;
 
-        $this->subjects = new ArrayCollection();
+        $this->subjectAssignments = new ArrayCollection();
     }
 
     public function getTeacherId()
@@ -33,18 +33,19 @@ final class Teacher
 
     public function assign(Subject $subject)
     {
-        foreach ($this->subjects as $existingSubject) {
-            if ($subject->equals($existingSubject)) {
+        foreach ($this->subjectAssignments as $subjectAssignment) {
+            if ($subjectAssignment->isFor($subject)) {
                 return;
             }
         }
-        $this->subjects[] = $subject;
+
+        $this->subjectAssignments->add(new SubjectAssignment($subject, $this));
     }
 
     public function teaches(Subject $subject)
     {
-        foreach ($this->subjects as $assignedSubject) {
-            if ($assignedSubject->equals($subject)) {
+        foreach ($this->subjectAssignments as $subjectAssignment) {
+            if ($subjectAssignment->isFor($subject)) {
                 return true;
             }
         }

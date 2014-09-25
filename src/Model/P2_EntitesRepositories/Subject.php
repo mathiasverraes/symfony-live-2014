@@ -4,7 +4,6 @@ namespace Model\P2_EntitesRepositories;
 
 final class Subject
 {
-    private $id;
     private $subject;
 
     public function __construct($subject)

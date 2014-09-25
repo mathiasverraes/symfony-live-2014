@@ -1,0 +1,20 @@
+Model\P2_EntitesRepositories\SubjectAssignment:
+  type: entity
+  table: SubjectAssignment
+  id:
+    subjectAssignmentId:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    subject:
+      string:
+        length: 64
+  manyToOne:
+    teacher:
+      targetEntity: Model\P2_EntitesRepositories\Teacher
+      mappedBy: subjectAssignments
+      cascade: [all]
+      joinColumn:
+        name: teacher_id
+        referencedColumnName: teacherId

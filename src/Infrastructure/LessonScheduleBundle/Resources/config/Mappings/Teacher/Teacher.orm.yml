@@ -9,15 +9,8 @@ Model\P2_EntitesRepositories\Teacher:
     name:
       type: string
       length: 255
-  manyToMany:
-    subjects:
-      targetEntity: Model\P2_EntitesRepositories\Subject
+  oneToMany:
+    subjectAssignments:
+      targetEntity: Model\P2_EntitesRepositories\SubjectAssignment
+      mappedBy: teacher
       cascade: [all]
-      joinTable:
-        name: teachers_subjects
-        joinColumns:
-          teacher_id:
-            referencedColumnName: teacherId
-        inverseJoinColumns:
-          subject_id:
-            referencedColumnName: id

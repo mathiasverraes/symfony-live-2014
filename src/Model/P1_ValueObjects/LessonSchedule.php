@@ -17,7 +17,7 @@ final class LessonSchedule
     public function schedule(Lesson $lesson)
     {
         $lessonSchedule = clone($this);
-        $this->lessons[] = $lesson;
+        $lessonSchedule->lessons[] = $lesson;
         return $lessonSchedule;
     }
 

@@ -53,7 +53,7 @@ final class DoctrineStaffRepository implements StaffRepository
             ->createQueryBuilder()
             ->select('t')
             ->from(Teacher::class, 't')
-            ->join('t.subjects', 's')
+            ->join('t.subjectAssignments', 's')
             ->where('s.subject = :subject')
             ->setParameter('subject', (string) $subject)
             ->getQuery()
